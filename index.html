@@ -32,14 +32,16 @@
         </div>
         <div class="outputs">
             <div class="search">
-                <input placeholder="search" id="search" type="text">
+                <input onkeyup="searchDta(this.value)" placeholder="search" id="search" type="text">
                 <div class="btnSearch">
-                    <button id="searchByTitle">Cearch By Title</button>
-                    <button id="searchByCategory">Cearch By Category</button>
+                    <button onclick="getSearchMood(this.id)" id="searchByTitle">Cearch By Title</button>
+                    <button onclick="getSearchMood(this.id)" id="searchByCategory">Cearch By Category</button>
                 </div>
             </div>
         </div>
-
+        <div id="deleteAll">
+            
+        </div>
         <table>
             <tr>
                 <th>id</th>
